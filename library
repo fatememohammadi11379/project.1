@@ -18,3 +18,10 @@ class Library:
             if book.title == book_title:
                 book.copies += num_copies
                 break
+    def rent_book(self, member_name, book_title):
+        # Implement logic for renting a book to a member
+        pass
+
+    def calculate_fine(self, member_name):
+        # Implement logic for calculating fines
+        pass
