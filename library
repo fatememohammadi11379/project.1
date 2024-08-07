@@ -1,0 +1,20 @@
+class Book:
+    def init(self, title, author, genre, copies):
+        self.title = title
+        self.author = author
+        self.genre = genre
+        self.copies = copies
+
+class Library:
+    def init(self):
+        self.books = []
+        self.members = {}
+
+    def add_book(self, book):
+        self.books.append(book)
+
+    def increase_copies(self, book_title, num_copies):
+        for book in self.books:
+            if book.title == book_title:
+                book.copies += num_copies
+                break
